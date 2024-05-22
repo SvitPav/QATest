@@ -1,5 +1,4 @@
 import pytest
-from user import User
 
 @pytest.fixture
 def user():
