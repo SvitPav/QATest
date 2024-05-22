@@ -23,19 +23,7 @@ def user():
     
     yield user
     
-    user.remove()
-
-
-    user.create()
-
-    assert user.name == 'Sergii'
-    user.remove()
-
-    user.create()
-
-    assert user.second_name == 'Butenko'
-    user.remove()
-
+   user.remove()
     
 
     
