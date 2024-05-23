@@ -1,13 +1,11 @@
 import pytest
-from user import User
+from user import User  # Зміна цього рядка на абсолютний шлях
 
 @pytest.fixture
 def user():
     user = User()
     user.create()
-
     yield user
-
     user.remove()
 
 def test_change_name(user):
