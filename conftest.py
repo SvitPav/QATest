@@ -27,7 +27,7 @@ def user():
 
 
 import pytest
-from my_module import GitHubAPI  # Припустимо, що у вас є модуль, який містить клас GitHubAPI
+from modules import GitHubAPI  # Припустимо, що у вас є модуль, який містить клас GitHubAPI
 
 @pytest.fixture
 def github_api():
