@@ -27,23 +27,23 @@ def user():
 
 
 import pytest
-from modules import GitHubAPI  # Припустимо, що у вас є модуль, який містить клас GitHubAPI
+from modules import GitHub  # Припустимо, що у вас є модуль, який містить клас GitHub
 
 @pytest.fixture
 def github_api():
-    # Ініціалізуємо екземпляр класу GitHubAPI або будь-який інший код, який потрібний для підготовки до використання GitHub API
-    api = GitHubAPI()
+    # Ініціалізуємо екземпляр класу GitHubAPI або будь-який інший код, який потрібний для підготовки до використання GitHub
+    api = GitHub()
     return api
 
 def test_github_api_call(github_api):
-    # Тест, який використовує фікстуру github_api для виклику GitHub API
+    # Тест, який використовує фікстуру github_api для виклику GitHub 
     response = github_api.call_some_method()
     assert response.status_code == 200
 
 @pytest.fixture
 def github_api():
     # Ініціалізуємо екземпляр класу GitHubAPI або будь-який інший код, який потрібний для підготовки до використання GitHub API
-    api = GitHubAPI()
+    api = GitHub()
     return api
 
 def test_github_api_call(github_api):
