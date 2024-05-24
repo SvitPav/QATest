@@ -26,27 +26,4 @@ def user():
     user.remove()
 
 
-import pytest
-from modules import GitHub  # Припустимо, що у вас є модуль, який містить клас GitHub
 
-@pytest.fixture
-def github_api():
-    # Ініціалізуємо екземпляр класу GitHubAPI або будь-який інший код, який потрібний для підготовки до використання GitHub
-    api = GitHub()
-    return api
-
-def test_github_api_call(github_api):
-    # Тест, який використовує фікстуру github_api для виклику GitHub 
-    response = github_api.call_some_method()
-    assert response.status_code == 200
-
-@pytest.fixture
-def github_api():
-    # Ініціалізуємо екземпляр класу GitHubAPI або будь-який інший код, який потрібний для підготовки до використання GitHub API
-    api = GitHub()
-    return api
-
-def test_github_api_call(github_api):
-    # Тест, який використовує фікстуру github_api для виклику GitHub API
-    response = github_api.call_some_method()
-    assert response.status_code == 200
