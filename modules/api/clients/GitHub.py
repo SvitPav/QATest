@@ -9,7 +9,7 @@ class GitHub:
         return body
 
     def search_repo(self, name):
-        r = requests/get(
+        r = requests.get(
             "https://api.github.com/search/repositories",
             params = {"q": name}
         )
