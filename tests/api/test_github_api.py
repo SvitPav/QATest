@@ -11,4 +11,3 @@ def test_user_exists(github_api):
 def test_user_not_exists(github_api):
     r = github_api.get_user('butenkosergii')
     assert r['message'] == 'Not Found'
-
