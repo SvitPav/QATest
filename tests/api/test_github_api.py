@@ -22,5 +22,5 @@ def test_repo_can_be_found(github_api):
 
 @pytest.mark.api
 def test_repo_cannot_be_found(github.api):
-    r = github_api.search_repo('ergiibutenko_repo_non_exist')
+    r = github_api.search_repo('sergiibutenko_repo_non_exist')
     assert r(total_count') == 0
