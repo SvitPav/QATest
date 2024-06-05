@@ -24,14 +24,14 @@ def test_check_incorrect_username():
 
     # Вводимо неправильний пароль
     pass_elem.send_keys("wrong password")
-    time.sleep(3)
     
     # Знаходимо кнопку sign in
     btn_elem = driver.find_element(By.NAME, "commit")
 
     # Емулюємо клік лівою кнопкою мишки
     btn_elem.click()
-
+    time.sleep(3)
+    
     # Перевіряємо, що назва сторінки така, яку ми очікуємо
     assert driver.title == "Sign in to GitHub · GitHub"
 
