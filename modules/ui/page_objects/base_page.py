@@ -6,7 +6,7 @@ from webdriver_manager.chrom import ChromDriverManager
 class BasePage:
     def __init__(self) -> None:
         self.driver = webdriver.Chrome(
-            service=Service(ChromDriverManager().instal()))
+            service=Service(ChromeDriverManager().instal()))
             
 
     def close(self):
