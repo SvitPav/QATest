@@ -7,7 +7,7 @@ class BasePage:
     def __init__(self) -> None:
         self.driver = webdriver.Chrome(
             service=Service(ChromDriverManager().instal()))
-            )
+            
 
     def close(self):
         self.driver.close()
