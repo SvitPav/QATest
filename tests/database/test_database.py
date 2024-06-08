@@ -1,5 +1,5 @@
 import pytest
-from modules.common.database.py import Database
+from modules.common.database import Database
 
 
 @pytest.mark.database
