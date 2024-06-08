@@ -13,7 +13,7 @@ class Database():
         record = self.cursor.fetchall()
         print(f"Connected successfully. SQLite Database Version is: {record}")
 
-   def get_all_users(self):
+    def get_all_users(self):
         query = "SELECT name, address, city FROM customers"
         self.cursor.execute(query)
         record = self.cursor.fetchall()
